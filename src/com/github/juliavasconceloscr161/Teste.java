@@ -1,5 +1,6 @@
 package com.github.juliavasconceloscr161;
 
+import com.github.juliavasconceloscr161.facade.Facade;
 import com.github.juliavasconceloscr161.singleton.SingletonEager;
 import com.github.juliavasconceloscr161.singleton.SingletonLazy;
 import com.github.juliavasconceloscr161.singleton.SingletonLazyHolder;
@@ -39,6 +40,11 @@ public class Teste {
 
         robot.setStrategyBehavior(agressive);
         robot.move();
+
+        System.out.println("\nFacade");
+        Facade facade = new Facade();
+        facade.migrateClient("Júlia", "78900654");
+
 
     }
 }
